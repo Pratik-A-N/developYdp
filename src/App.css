@@ -1,0 +1,521 @@
+/* Font Families */
+@font-face {
+    font-family: Clash-Grotesk;
+    src: url(./Assets/fonts/ClashGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: sao_torpes;
+    src: url(./Assets/fonts/SaoTorpes.otf);
+}
+
+@font-face {
+    font-family: Clash-Grotesk-variable;
+    src: url(./Assets/fonts/ClashGrotesk-Variable.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: scroll; */
+}
+a{
+    text-decoration: none;
+}
+/* body{
+    background-color: black;
+    color:white;
+} */
+
+#carnival{
+    width:100%;
+}
+
+.z{
+    position: fixed;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgb(48, 33, 100);
+    width: 100%;
+}
+
+#loading,#loggedin{
+    display:none;
+}
+
+#danger,#success{
+    display: none;
+    justify-content: space-between;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#bg{
+    background-image: url('./Assets/images/background/pg1.png');
+    /* opacity: 0.5; */
+    backface-visibility: inherit;
+    
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-color: #333457;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+#homepg{
+    mix-blend-mode: luminosity;
+    float: right;
+    z-index: 1;
+}
+
+#stars{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.aplo{
+    margin-left: 2vw;
+    width: 15vw;
+    position: relative;
+    z-index: 4;
+}
+
+.navCustomDesign{
+    color: #FFE1D1;
+    font-family: Clash-Grotesk;
+    font-weight: bolder;
+    margin: 0 4vw;
+    font-size: 3.5vh;
+    z-index: 4;
+    position: relative;
+}
+
+.navCustomDesign:hover{
+    color:#DE5D48;
+}
+
+.customIndent{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.cont-title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    z-index: 4;
+    position: relative;
+    height:90vh;
+}
+
+#title{
+    font-family: sao_torpes;
+    color: #DE5D48;
+    font-size: 30vh;
+}
+
+#signInDiv{
+    width: fit-content;
+    border: none;
+    background-color: white;
+    color: white;
+    font-family: sao_torpes;
+    font-size: 3.5vh;
+    border-radius: 5vh;
+    padding: 1.2vh 1.5vw;
+    z-index: 5;
+}
+
+.signInDiv1{
+    width: fit-content;
+    border: none;
+    background-color: #DE5D48;
+    color: white;
+    font-family: sao_torpes;
+    font-size: 3.5vh;
+    border-radius: 5vh;
+    padding: 1.2vh 1.5vw;
+    z-index: 5;
+}
+
+.signInDiv1:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #DE5D48;
+    z-index: 5;
+}
+
+.titlehead{
+    color:#DE5D48;
+    font-family: sao_torpes;
+    font-size: 5vh;
+}
+
+.idydp{
+    color:#DE5D48;
+    font-family: sao_torpes;
+    margin-top: 20px;
+    margin-left: 26px;
+    font-size: 6vh;
+}
+
+.discrip{
+    color:#FFE1D1;
+    font-family: Clash-Grotesk-variable;
+    font-weight: 100;
+    font-size: 3.5vh;
+    margin-bottom: 4vh;
+}
+
+.innerdisc{
+    font-size: 2.5vh;
+    color:#FFE1D1;
+}
+
+.innertitle{
+    font-family: Clash-Grotesk;
+    color:#FFE1D1;
+}
+
+#leaf1{
+    position: absolute;
+    left:0;
+}
+
+#leaf7{
+    position: absolute;
+    left:0;
+    width: 20vh;
+
+}
+
+#leaf2, #leaf20{
+    position:absolute;
+    right: 0;
+}
+
+.accordion-item{
+    margin: 3.5vh;
+    background: transparent;
+    color: #FFE1D1;
+    border: 1px solid #090911;
+}
+
+.innerbt{
+    background: #7b7db8;
+}
+
+#regpg{
+    position:fixed;
+    background-image: url('./Assets/images/background/pg1.png');
+    /* opacity: 0.5; */
+    backface-visibility: inherit;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333457;
+    top:0;
+    left:0;
+    right:0;
+    min-height:100vh;
+    
+}
+
+.innerreg{
+    margin-top: 5vh;
+    font-size:5vh;
+    font-family:sao_torpes;
+    color:#DE5D48;
+}
+
+label{
+    font-size: 2.5vh;
+}
+
+.extbt{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.bt1{
+    background-color: #DE5D48;
+    color: white;
+    font-family: sao_torpes;
+    padding: 1vh 3vh;
+    font-size: 2.5vh;
+    border-radius: 2vh;
+    border: none;
+}
+
+.bt1:hover{
+    background-color: white;
+    color: #DE5D48;
+}
+
+/* #profileimg{
+
+} */
+
+#profileimg{
+    border-radius: 50%;
+    width: 6vh;
+    margin-right: 2vh;
+}
+
+.up{
+    margin-top:15vh;
+}
+
+.font-3{
+    font-size:3vh;
+}
+
+.customEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.float-center{
+    text-align: center;
+}
+
+.ax{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+
+}
+
+.IdCard{
+    width: 458px;
+    min-height: auto;
+    border:1px solid black;
+    background-color: #333457;
+    padding-bottom: 5vh;
+}
+
+#bookmark{
+    float:right;
+    margin-right:73px;
+}
+
+.icon{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    margin-top: 5vh;
+    text-decoration: underline;
+    color: #FFE1D1;
+    text-align: center;
+    font-family: Clash-Grotesk-variable;
+    font-size: 3.5vh;
+    word-wrap: break-word;
+}
+
+.other{
+    /* padding: 0; */
+
+    margin-left: 5vh;
+    margin-right:5vh;
+    margin-top: 5vh;
+}
+
+.email{
+    color: #E5BAB1;
+    font-family: Clash-Grotesk-variable;
+    font-size: 2.5vh;
+    word-wrap: break-word;
+}
+
+#custCard{
+    display:none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #7b7db8;
+}
+
+#delegateId{
+    width:fit-content;
+}
+
+.newbt{
+    background-color: transparent;
+    border: none;
+    color: #DE5D48;
+    font-family: Clash-Grotesk-variable;
+    margin-top: 5vh;
+}
+
+.newbt:hover{
+    color: rgb(117, 29, 29);
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* responsive css */
+@media screen and (max-width:1024px) {
+    .navCustomDesign{
+        margin:0 3vw;
+        font-size: 2.5vh;
+    }
+    #title{
+        font-size: 25vh;
+    }
+    #homepg{
+        width: 60vh;
+    }
+    .titlehead{
+        font-size: 4vh;
+    }
+    .discrip{
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #title{
+        font-size: 20vh;
+    }
+    #homepg{
+        width: 47vh;
+        margin-top: 43vh;
+    }
+    .titlehead{
+        font-size: 4vh;
+    }
+    .discrip{
+        font-size: 2.5vh;
+    }
+    #star{
+        width: 40vh;
+    }
+    #profileimg{
+        width: 4vh;
+        margin-right: 1.5vh;
+    }
+    .signInDiv1{
+        font-size: 2vh;
+    }
+    .font-3{
+        text-align: center;
+    }
+    #leaf20{
+        top: 0;
+        width: 13vh;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .aplo{
+        width: 30vw;
+    }
+    #title{
+        font-size: 16vh;
+    }
+    #homepg{
+        width: 40vh;
+        margin-top: 40vh;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+    }
+    .titlehead{
+        font-size: 3vh;
+    }
+    .discrip{
+        font-size: 2vh;
+
+    }.innerdisc{
+        font-size: 1.8vh;
+    }
+    #star{
+        width: 45vh;
+    }
+    .allAbout{
+        margin: 0 5vh;
+    }
+    #profileimg{
+        width: 3vh;
+        margin-right: 1vh;
+    }
+    .signInDiv1{
+        font-size: 2vh;
+    }
+    #leaf7{
+        width: 15vh;
+    }
+    .innerreg{
+        /* margin-top: 0; */
+        font-size: 3.5vh;
+    }
+    .IdCard{
+        width:400px;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    #star{
+        width: 40vh;
+    }
+    .font-3{
+        font-size: 2.5vh;
+    }
+    .IdCard{
+        width:345px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #star{
+        width: 35vh;
+    }
+    #homepg{
+        width: 35vh;
+    }
+    #title{
+        font-size: 13vh;
+    }
+    .allAbout{
+        margin: 0 3vh;
+    }
+    .font-3{
+        font-size: 2vh;
+    }
+    .innerreg{
+        margin: 1vh;
+        font-size: 4vh;
+    }
+    .innerdisc{
+        margin: 1vh;
+    }
+    .IdCard{
+        width:300px;
+    }
+}
